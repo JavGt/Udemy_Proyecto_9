@@ -84,12 +84,6 @@ img{
     padding: 5rem 0;
 }
 
-@media (min-width: 768px ) { 
-    .header{
-        padding: 2rem 0;
-    }
-}
-
 .contenido-header{
     display: flex;
     flex-direction: column;
@@ -175,4 +169,24 @@ img{
 .navegacion a:hover{
     background-color: rgb(255 255 255 / .5) ;
     color: var(--negro);
+}
+.slogan{
+    text-align: center;
+}
+.slogan h2{
+    font-size: 3rem;
+    margin: 0;
+}
+@media (min-width: 768px ) { 
+    .slogan{
+        text-align: right;
+    }
+    .slogan h2{
+        font-size: 5rem;
+        margin: 0;
+    }
+}
+.slogan p{
+    margin: 0;
+    line-height: 1;
 }
