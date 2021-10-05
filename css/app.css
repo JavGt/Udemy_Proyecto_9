@@ -341,9 +341,14 @@ img{
     justify-content: flex-end;
     color: var(--blanco);
 }
-.copyrigth{
+.copyright{
     background-color: var(--negro);
     margin: 5rem 0 0 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 1rem;
+}
+@media (min-width: 768px ) { 
+    .copyright{
+        font-size: 2rem;
+    }
 }
