@@ -328,3 +328,16 @@ img{
     
 }
 
+/* --- Footer ---  */
+.footer{
+    height: 50rem;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--blanco);
+}
