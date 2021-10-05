@@ -20,7 +20,7 @@ html {
 
 /* *----* custom properties *----*  */
 :root{
-    --negro: #1111;
+    --negro: rgb(0, 0, 0);
     --blanco: #FFF;
     --gris: #343a40;
 
@@ -122,12 +122,57 @@ img{
     flex-direction: column;
     align-items: center;
 }
-.contacto a{
-    color: var(--blanco);
-}
 
 @media (min-width: 768px ) { 
     .contacto{
         align-items: flex-end;
     }
+}
+.telefono{
+    display: flex;
+}
+
+.telefono::before{
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 1rem; 
+}
+
+.contacto a{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px ) { 
+    .navegacion{
+        flex-direction: row;
+    }
+}
+.navegacion a{
+    padding: .5rem;
+    transition: background-color .3s ;
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 768px ) { 
+    .navegacion a{
+        padding: 1rem 1.5rem;
+    }
+}
+.navegacion a:hover{
+    background-color: rgb(255 255 255 / .5) ;
+    color: var(--negro);
 }
