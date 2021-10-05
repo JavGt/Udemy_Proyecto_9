@@ -341,3 +341,9 @@ img{
     justify-content: flex-end;
     color: var(--blanco);
 }
+.copyrigth{
+    background-color: var(--negro);
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+    padding: 1rem;
+}
